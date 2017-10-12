@@ -26,7 +26,7 @@
 
 
       <div id="block1">
-        <img src="./assets/images/codinglogo.png" width="120px" height="120px" style="margin-top:-80px; margin-left:20%;display:flow;">
+        <img src="./assets/images/photoprof.png" width="120px" height="120px" style="margin-top:-80px; margin-left:20%;display:flow;">
       <p style="margin-top:-1px; margin-left:28%; margin-right:18%; text-align:justify;">
         Je me nomme Jonathan Caron et je suis un jeune web developpeur autodidacte. Je suis passionné par l'informatique depuis tout petit et je m'intéresse à toutes sortes de technologies dans le but d'apprendre en continue.
 <br/><br/>Je suis diplômé du CESS, de la gestion et de la bureautique. J'ai eu une bonne expérience dans l'administration-bureautique en travaillant pour Belfius Waterloo SCRL mais également dans divers domaine tels que le marketing et la communication avec la clientèle.</p>
@@ -158,6 +158,31 @@
 
           <?php
           if(!empty($_POST)){
+
+                /* EMAIL S£YSTEM
+                $destinataire = 'jonathan.caron04@gmail.com';
+                // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
+                $expediteur = $_POST['email'];
+
+                $objet = "test";
+
+                $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+                $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+                $headers .= 'To: '.$destinataire."\n"; // Mail de reponse
+                $headers .= 'From: "Nom_de_destinataire"<'.$expediteur.'>'."\n"; // Expediteur
+
+                $message =  '<div style="width: 100%; text-align: center; font-weight: bold"> Bonjour '.$_POST['name'].'!<br>
+                                '.$_POST['message'].'</div>';
+
+                if(mail($destinataire, $objet, $message, $headers))
+                {
+                    echo '<script languag="javascript" >alert("Votre message a bien été envoyé ");</script>';
+                }
+                else // Non envoyé
+                {
+                    echo '<script languag="javascript">alert("Votre message n\'a pas pu être envoyé");</script>';
+                }
+                */
             ?>
             <p style="color:green">Votre message a bien été envoyé !</p>
             <?php
